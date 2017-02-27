@@ -12,5 +12,5 @@ addons:
   postgresql: '9.4'
 before_install: bin/setup
 script:
-- bundle exec bin/rails app:test:providers:azure:setup app:test:providers:azure
+- bundle exec bin/rails app:test:providers:yarn:setup app:test:providers:yarn
 after_script: bundle exec codeclimate-test-reporter
