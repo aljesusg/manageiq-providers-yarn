@@ -11,10 +11,10 @@ end
 
 namespace :spec do
   desc "Setup environment for specs"
-  task :setup => 'app:test:providers:yarn:setup'
+  task :setup => 'app:test:providers:vmware:setup'
 end
 
-desc "Run all amazon specs"
-task :spec => 'app:test:providers:yarn'
+desc "Run all vmware specs"
+task :spec => 'app:test:providers:vmware'
 
 task :default => :spec

@@ -1,5 +1,0 @@
-GlobalVars:
-  AllowedVariables:
-  # Loggers
-  - $aws_log
-  - $log
