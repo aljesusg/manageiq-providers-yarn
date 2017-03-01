@@ -1,33 +1,12 @@
 ---
-engines:
-  fixme:
-    enabled: true
-ratings:
-  paths: []
-exclude_paths: []
----
 exclude_paths:
 - ".git/"
-- "**.gif"
-- "**.html"
-- "**.json"
-- "**.png"
-- "**.svg"
 - "**.xml"
 - "**.yaml"
 - "**.yml"
-- "config/dictionary_strings.rb"
-- "config/model_attributes.rb"
-- "config/yaml_strings.rb"
-- "db/schema.rb"
-- "db/schema.yml"
-- "db/fixtures/**/*.yml"
-- "db/migrate/20130923182042_collapsed_initial_migration.rb"
 - "locale/"
 - "spec/"
-- "test/"
-- "tmp/"
-- "vendor/assets/"
+- "tools/"
 engines:
   brakeman:
     # very slow :sad_panda:
@@ -40,11 +19,12 @@ engines:
   duplication:
     enabled: true
     config:
-      concurrency: 1
       languages:
       - ruby
+      - javascript
   eslint:
     enabled: false
+    channel: "eslint-3"
   fixme:
     # let's enable later
     enabled: false
