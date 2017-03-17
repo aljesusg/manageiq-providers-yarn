@@ -26,6 +26,5 @@ describe ManageIQ::Providers::Yarn::InfraManager do
 
   it "will verify credentials" do
       expect(@ems.verify_credentials).to eq(true)
-    end
   end
 end
