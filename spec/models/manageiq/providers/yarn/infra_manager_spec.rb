@@ -21,11 +21,5 @@ describe ManageIQ::Providers::Yarn::InfraManager do
         end
         @e.connect({:host => @server, :port =>@port})
     end
-
-    it "Fog::Compute:Haddop receive new" do
-      require 'fog/hadoop'
-
-      puts @e.connect({:host => "lpcmf423.igrupobbva", :port =>@port}).get_metrics
-    end
   end
 end

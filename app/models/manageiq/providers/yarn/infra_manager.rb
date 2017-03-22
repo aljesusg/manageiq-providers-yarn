@@ -14,13 +14,5 @@ module ManageIQ::Providers
     def self.description
       @description ||= "Hadoop Yarn".freeze
     end
-
-    def missing_credentials?(_type = {})
-	    false
-	  end
-
-    def get_nodes
-
-    end
   end
 end

@@ -1,5 +1,5 @@
 module ManageIQ::Providers::
-  class Yarn::InfraManager::NodeManager < ::NodeManager
+  class Yarn::InfraManager::NodeManager < ::Host
     def name
       "node_manager"
     end

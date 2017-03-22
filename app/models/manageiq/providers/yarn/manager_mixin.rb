@@ -19,7 +19,7 @@ module ManageIQ::Providers::Yarn::ManagerMixin
     true
   end
 
-  def connect(options = {})
+  def self.connect(options = {})
     require 'fog/hadoop'
 
     raise "no credentials defined" if missing_credentials?(options[:auth_type])
