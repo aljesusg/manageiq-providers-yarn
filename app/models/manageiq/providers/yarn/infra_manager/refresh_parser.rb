@@ -3,8 +3,10 @@ module ManageIQ::Providers
     module InfraManager::RefreshParser
 
       def self.initialize(ems, options = nil)
+        ems_auth = ems.authentications.first
         @ems        = ems
-        @connection = ManageIQ::Providers::Yarn::ManagerMixin.connect({:host => "lpcmf423.igrupobbva", :port => 8088})
+        @connection = ems.connect({:host => ems.endpoints.first.hostname,
+                                   :port => 8088})
         @options    = options || {}
         @data       = {}
       end
