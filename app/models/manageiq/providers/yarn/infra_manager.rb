@@ -9,7 +9,7 @@ module ManageIQ::Providers
     include ManageIQ::Providers::Yarn::ManagerMixin
 
     def self.ems_type
-      @ems_type ||= "yarns".freeze
+      @ems_type ||= "yarn_infra".freeze
     end
 
     def self.description
